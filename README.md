@@ -71,12 +71,27 @@ G02.csv G04.csv G06.csv G08.csv G10.csv G12.csv G14.csv G16.csv G18.csv G20.csv
 - After that, you can send those csv files to the gophish host. Both support single csv file or folder which contain csv files.
 
 ```bash
-➜  mailgen python3 send.py -H <gophish-host> -k <gophish-api-key> -ff output      
+➜  mailgen python3 gpcreate.py -H <gophish-host> -k <gophish-api-key> -ff output      
 Successfully uploaded group G14
 Successfully uploaded group G15
 Successfully uploaded group G01
-➜  mailgen python3 send.py -H <gophish-host> -k <gophish-api-key> -f output/G14.csv      
+➜  mailgen python3 gpcreate.py -H <gophish-host> -k <gophish-api-key> -f output/G14.csv      
 Successfully uploaded group G14
+```
+
+- Finally, you can launch the phishing campaign with specific name.
+
+```bash
+➜  mailgen python3 send.py \ 
+    -l "S4 - Redirect to Valentine Day Gift" \
+    -t "S4 - Valentine Day Gift" \
+    -u http://18.143.126.45 \
+    -p announcement \
+    -g hnl-only \
+    -c hnl-test \
+    -now
+[+] Launching campaign immediately at: 2025-02-09T05:52:49Z
+[+] Successfully created campaign: hnl-test
 ```
 
 ## Note
