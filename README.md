@@ -83,15 +83,15 @@ Successfully uploaded group G14
 
 ```bash
 ➜  mailgen python3 send.py \ 
-    -l "S4 - Redirect to Valentine Day Gift" \
-    -t "S4 - Valentine Day Gift" \
-    -u http://18.143.126.45 \
-    -p announcement \
-    -g hnl-only \
-    -c hnl-test \
+    -l "test landing" \
+    -t "test landing" \
+    -u http://123.123.123.123 \
+    -p test \
+    -g test \
+    -c test \
     -now
 [+] Launching campaign immediately at: 2025-02-09T05:52:49Z
-[+] Successfully created campaign: hnl-test
+[+] Successfully created campaign: test
 ```
 
 ## Note
